@@ -1,0 +1,829 @@
+@charset "utf-8";
+
+/* =Reset default browser CSS.
+Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+:focus {
+    outline: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+a img {
+    border: 0;
+}
+
+figure {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+/* -------------------------------------------------------------- */
+
+body {
+    color: #555;
+    font: 12px verdana, "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+    line-height: 1.5;
+    background: #f6f3ec;
+    -webkit-text-size-adjust: none;
+}
+
+
+/* リンク設定
+------------------------------------------------------------*/
+
+a {
+    color: #eca92b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bc7d03;
+}
+
+a:active,
+a:focus {
+    outline: 0;
+}
+
+
+/* 全体
+------------------------------------------------------------*/
+
+#wrapper {
+    margin: 0 auto;
+    padding: 0 1%;
+    width: 98%;
+    position: relative;
+}
+
+.inner {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/*************
+/* ヘッダー
+*************/
+
+#header .inner {
+    margin-top: 20px;
+    overflow: hidden;
+    background: #1e1e1e;
+    border: 1px solid #efede7;
+}
+
+* html #header {
+    height: 1%;
+}
+
+
+/*************
+/* ロゴ
+*************/
+
+#header .logo {
+    float: left;
+    padding: 30px 0 0 20px;
+}
+
+.logo a {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.logo span {
+    font-size: 9px;
+    font-weight: normal;
+}
+
+#header h1 {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.boxContainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box {
+    display: inline;
+    color: white;
+}
+
+
+/**************************
+/* メイン画像（トップページ+サブページ）
+**************************/
+
+#mainBanner {
+    margin: 20px auto;
+    padding: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+#mainBanner .inner {
+    position: relative;
+}
+
+#mainBanner img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    background: #fff;
+    box-shadow: #ccc 0 0 3px;
+}
+
+.slogan {
+    position: absolute;
+    margin: 5px;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+    line-height: 1.4;
+    z-index: 100;
+    color: #fff;
+    background: url(images/tp2.png);
+}
+
+.slogan h2 {
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.slogan h3 {
+    font-size: 14px;
+    font-style: bold;
+}
+
+.sloganB {
+    position: absolute;
+    margin: 5px;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+    line-height: 1.4;
+    z-index: 100;
+    color:black;
+    background: url(images/tp2.png);
+}
+
+.sloganB h2 {
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.sloganB h3 {
+    font-size: 14px;
+}
+
+
+/**************************
+/* グリッド
+**************************/
+
+.gridWrapper {
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+* html .gridWrapper {
+    height: 1%;
+}
+
+.grid {
+    float: left;
+    background: #fff;
+    border-top: 5px solid #bc7d03;
+    border-bottom: 5px solid #bc7d03;
+    box-shadow: 0 0 3px #ddd;
+}
+
+.grid h3 {
+    padding: 10px 0;
+    font-weight: bold;
+    color: #fff;
+    background: #eca92b;
+    text-align: center;
+}
+
+.grid p {
+    padding: 5px 10px;
+}
+
+.grid p.img {
+    padding: 0;
+}
+
+p.readmore {
+    padding: 10px;
+}
+
+
+/* フッター内のグリッド(3カラム) */
+
+#footer .grid {
+    color: #fff;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+#footer .grid p {
+    padding: 0;
+}
+
+
+/*************
+メイン コンテンツ
+*************/
+
+section.content {
+    padding: 0 10px 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 14px;
+    background: #fff;
+    box-shadow: 0 0 3px #ddd;
+}
+
+* html section.content {
+    height: 1%;
+}
+
+section.content p {
+    margin-bottom: 5px;
+}
+
+h3.heading {
+    padding: 5px 10px;
+    margin: 0 -10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border-top: 5px solid #bc7d03;
+    background: #eca92b;
+}
+
+section.content img {
+    max-width: 90%;
+    height: auto;
+}
+
+img.frame,
+#gallery img {
+    padding: 3px;
+    box-shadow: 0 0 3px #ddd;
+}
+
+#gallery .grid {
+    margin-bottom: 10px;
+    box-shadow: none;
+    border: 0;
+}
+
+.alignleft {
+    float: left;
+    clear: left;
+    margin: 3px 10px 10px 0;
+}
+
+.alignright {
+    float: right;
+    clear: right;
+    margin: 3px 0 10px 10px;
+}
+
+
+/*************
+テーブル
+*************/
+
+table.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px auto;
+}
+
+table.table th,
+table.table td {
+    padding: 5px;
+    border: 1px solid #eca92b;
+}
+
+table.table th {
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    color: #fff;
+    background: #bc7d03;
+    border-left: #eca92b 5px solid
+}
+
+a {
+    color: #eca92b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bc7d03;
+}
+
+table.table td {
+    border-left: #eca92b 3px double
+}
+
+
+/*************
+サブ（フッター前）コンテンツ
+*************/
+
+#sub ul {
+    padding: 10px;
+}
+
+#sub li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ebebeb;
+}
+
+#sub li:last-child {
+    border: 0;
+    margin-bottom: 0;
+}
+
+#sub li a {
+    display: block;
+}
+
+#sub ul.list {
+    padding-bottom: 7px;
+}
+
+#sub ul.list li {
+    clear: both;
+    margin-bottom: 6px;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+* html #sub ul.list li {
+    height: 1%;
+}
+
+#sub ul.list li img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+#sub ul.list li {
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+
+/*************
+/* フッター
+*************/
+
+#footer .inner {
+    clear: both;
+    padding: 20px 0 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-top: 5px solid #bc7d03;
+    border-bottom: 5px solid #bc7d03;
+    background: #1e1e1e;
+}
+
+* html #footer .inner {
+    height: 1%;
+}
+
+#footer p.logo {
+    padding-left: 20px;
+}
+
+.tel strong {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer a:hover {
+    color: #bc7d03;
+}
+
+#footer .copyright {
+    font-size: 11px;
+}
+
+
+/* PC用 */
+
+@media only screen and (min-width:960px) {
+    #wrapper,
+    .inner {
+        width: 940px;
+        padding: 0;
+    }
+    #wrapper {
+        padding-bottom: 20px;
+    }
+    nav div.panel {
+        display: block !important;
+        float: right;
+    }
+    a#menu {
+        display: none;
+    }
+    nav#mainNav ul {
+        float: right;
+        overflow: hidden;
+    }
+    * html nav#mainNav ul {
+        height: 1%;
+    }
+    nav#mainNav ul li {
+        float: left;
+        text-align: center;
+        border-right: 1px solid #efede7;
+    }
+    nav#mainNav ul a {
+        font-size: 13px;
+        display: block;
+        padding: 50px 15px;
+        line-height: 1.2;
+        color: #bc7d03;
+        background: #fff;
+    }
+    nav#mainNav ul span {
+        font-size: 10px;
+    }
+    nav#mainNav ul p.panel-caption {
+        font-size: 10px;
+    }
+    nav#mainNav ul li.active a,
+    nav#mainNav ul a:hover {
+        color: #fff;
+        background: #bc7d03;
+    }
+    /* グリッド全体 */
+    .gridWrapper {
+        width: 960px;
+        margin: 0 0 0 -20px;
+    }
+    /* グリッド共通 ベース:トップページ4カラム */
+    .grid {
+        float: left;
+        width: 220px;
+        margin-left: 20px;
+    }
+    /* サブコンテンツ + フッター グリッド(3カラム) */
+    #sub .grid,
+    #footer .grid {
+        width: 298px;
+    }
+    #footer .grid {
+        border: 0;
+    }
+    .gridEnd {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        clear: both;
+    }
+}
+
+
+/* モニター幅940px以下 */
+
+@media only screen and (max-width:940px) {
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #header .inner,
+    #footer .inner {
+        margin: 0;
+        padding: 0;
+    }
+    #header .logo,
+    #footer .logo {
+        float: none;
+        text-align: center;
+        padding: 10px 5px;
+    }
+    nav#mainNav {
+        clear: both;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        background: #bc7d03;
+    }
+    nav#mainNav a.menu {
+        width: 100%;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        text-align: left;
+        color: #fff;
+    }
+    nav#mainNav a#menu span {
+        padding-left: 10px;
+    }
+    nav#mainNav a.menu span:before {
+        content: "→ ";
+    }
+    nav#mainNav a.menuOpen span:before {
+        content: "↓ ";
+    }
+    nav#mainNav a#menu:hover {
+        cursor: pointer;
+    }
+    nav .panel {
+        display: none;
+        width: 100%;
+        position: relative;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    nav#mainNav ul li {
+        float: none;
+        clear: both;
+        width: 100%;
+        height: auto;
+        line-height: 1.2;
+    }
+    nav#mainNav ul li a,
+    nav#mainNav ul li.current-menu-item li a {
+        display: block;
+        padding: 15px 10px;
+        text-align: left;
+        border-bottom: 1px dotted #1e1e1e;
+        color: #fff;
+        background: #eca92b;
+    }
+    nav#mainNav ul li a span {
+        padding-left: 10px;
+    }
+    nav#mainNav ul li:first-child a {
+        border-top: 1px dotted #1e1e1e;
+    }
+    nav#mainNav ul li:last-child a {
+        border: 0;
+    }
+    nav#mainNav ul li.active a,
+    nav#mainNav ul li a:hover {
+        background: #bc7d03;
+    }
+    nav div.panel {
+        float: none;
+    }
+    .grid {
+        float: left;
+        width: 48%;
+        margin: 10px 2% 0 0;
+    }
+    .grid img {
+        float: left;
+        margin-right: 5px;
+    }
+    #gallery {
+        padding-left: 1px;
+    }
+    #gallery .grid {
+        width: 23%;
+        margin: 0 2% 0 0;
+        padding: 0;
+    }
+    #gallery .grid img {
+        float: none;
+        margin: 0;
+    }
+    #sub .grid {
+        width: 32%;
+        margin: 10px 1%;
+    }
+    #sub .grid:first-child {
+        margin-left: 0;
+    }
+    #sub .grid:last-child {
+        margin-right: 0;
+    }
+    #footer .grid,
+    #footer .grid p {
+        float: none;
+        width: 100%;
+        text-align: center;
+        border: 0;
+    }
+    #footer .grid:last-child {
+        padding-top: 20px;
+    }
+}
+
+
+/* iPad 縦 */
+
+@media only screen and (max-width:768px) {
+    #header {
+        padding-bottom: 0;
+    }
+    #header h1 {
+        text-align: center;
+    }
+    #header .logo {
+        float: none;
+        text-align: center;
+        padding: 10px 5px 20px;
+    }
+    #sub ul.list {
+        padding: 10px 10px 11px;
+    }
+    #sub ul.list li {
+        padding-bottom: 10px;
+        margin-bottom: 8px;
+    }
+}
+
+
+/* スマートフォン 横(ランドスケープ) */
+
+@media only screen and (max-width:640px) {
+    #footer .grid p {
+        text-align: center;
+    }
+    .grid img {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+    .grid p,
+    #sub .grid li {
+        text-align: left;
+    }
+    .alignleft,
+    .alignright {
+        float: none;
+        display: block;
+        margin: 0 auto 10px;
+    }
+    #sub ul.list li img {
+        margin: 0 5px 0 0;
+        width: auto;
+        height: auto;
+    }
+}
+
+
+/* スマートフォン 縦(ポートレート) */
+
+@media only screen and (max-width:480px) {
+    #mainBanner h2,
+    #mainBanner h3 {
+        font-size: 75%;
+    }
+    #sub .grid {
+        float: none;
+        width: 98%;
+    }
+    #sub .grid h3 {
+        padding: 10px 5px;
+    }
+    #sub ul.list {
+        padding: 10px;
+    }
+    #sub ul.list li {
+        padding-bottom: 3px;
+        margin-bottom: 3px;
+    }
+}
